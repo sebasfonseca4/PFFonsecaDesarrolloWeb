@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter' !important;
+}
+
+
+/* Estilos Header */
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor-small{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #483078;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header .header-logo img{
+    max-width: 180px;
+    opacity: 0.9;
+    transition: 0.2s opacity;
+}
+
+.header .header-logo img:hover{
+    opacity: 1;
+}
+
+.header .header-menu ul{
+    display: flex;    
+}
+
+.header .header-menu ul li{
+    list-style: none; 
+}
+
+.header .header-menu ul li a{
+    color: white;
+    margin-left: 50px;
+    text-decoration: none;
+    transition: 0.1s border-bottom;
+}
+
+.header .header-menu ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* Estilos Seccion Principal Home */
+
+.bg-dark-purple{
+    background: url('../img/bg-dark-purple.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.primera-seccion{
+    display: flex;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    justify-content: space-between;
+}
+
+.primera-seccion .title{
+    padding: 50px 50px 50px 0;
+    color: white;
+}
+
+.primera-seccion .title h1{
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.primera-seccion .title p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    line-height: 150%;
+}
+
+.btn-purple{
+    background-color: #906090;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 100px;
+    border: none;
+    transition: 0.2s background-color;
+    cursor: pointer;
+}
+
+.btn-purple:hover{
+    background-color: #c695c6;
+}
+
+.primera-seccion .img{
+    max-width: 560px;
+}
+
+/* Estilos juegos mas esperados */
+
+.bg-light-purple{
+    background: url('../img/bg-light-purple.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mas-esperados{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.mas-esperados h2{    
+    margin-bottom: 65px;
+    text-align: center;
+    font-size: 32px;
+    color: white
+}
+
+.mas-esperados-boxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mas-esperados-boxes .caja{
+    width: 100%;  
+    color: white; 
+}
+
+.mas-esperados-boxes .caja h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+/* Estilos Pagina Reviews */
+
+.bg-img-dark{
+    background: url('../img/bg-img-dark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-dark-blue{
+    background-color: #001848;
+}
+
+.bg-purple-light{
+    background-color: #906090;
+}
+
+/* Estilos Pagina Nosotros */
+
+.bg-img-about{
+    background: url('../img/bg-about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img-about-purple{
+    background: url('../img/bg-about-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.borde-about-person{
+    border: 3px solid #906090 !important; 
+}
+
+.box-person{
+    height: 335px;
+}
+
+.info-person{
+    position: relative;
+    height: 280px;
+}
+
+.text-person{
+    height: calc(100% - 50px);
+}
+
+.text-person p{
+    height: fit-content;
+    max-height: 190px;
+    overflow: auto;
+}
+
+.name-person{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+/* Estilos Formulario Subscribete */
+
+.caja-subscribete{
+    padding: 65px 0;
+    text-align: center;
+}
+
+.caja-subscribete h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    color: white;
+}
+
+.caja-subscribete p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.caja-subscribete form input[type="text"]{
+    padding: 12px;
+    color: black;
+    width: 100%;
+}
+
+/* Estilos Pagina Noticias */
+
+.banner-noticias .titulo{
+    color: #D296D2;
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    -webkit-text-stroke: 2px #B01BC8;
+    padding-top: 20px;
+}
+
+/* Estilos Pagina Contacto */
+
+.formulario {
+    width: 50%
+}
+
+
+/* Estilos Pie de Pagina */
+
+footer {
+    background-color: #001848;
+    color: white;
+    padding: 65px 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer .footer-logo img{
+    max-width: 180px;
+    opacity: 0.9;
+    transition: 0.2s opacity;
+}
+
+.footer .footer-logo img:hover{
+    opacity: 1;
+}
+
+.footer .footer-text ul{
+    margin-top: 15px;
+}
+
+.footer .footer-text ul li{
+    margin-top: 15px;
+    list-style: none;
+}
+
+.footer .footer-text ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.copyright{
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* Estilos Mobile Media Queries */
+
+@media (max-width: 768px) {
+
+    /* Estilos Pagina Noticias Mobile  */
+    .formulario {
+      width: 100%;
+    }
+}
