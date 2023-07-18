@@ -1,0 +1,73 @@
+@import "header";
+@import "footer";
+@import "home";
+@import "nosotros";
+@import "esperados";
+@import "noticias";
+@import "reviews";
+
+// Variables
+
+$dark-purple: #906090;
+$light-purple: #c695c6;
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter' !important;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenedor-small {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+/* Estilos Pagina Contacto */
+
+.formulario {
+  width: 50%;
+}
+
+/* Estilos Generales */
+
+.btn-purple {
+  background-color: $dark-purple;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  border-radius: 100px;
+  border: none;
+  transition: 0.2s background-color;
+  cursor: pointer;
+  &:hover {
+    background-color: $light-purple;
+    color: white;
+  }
+}
+
+.btn-purple-sm{
+  @extend .btn-purple;  
+  font-size: 12px;
+}
+
+.btn-purple-md{
+  @extend .btn-purple;  
+  font-size: 16px;
+}
+
+.btn-purple-lg{
+  @extend .btn-purple;  
+  font-size: 18px;
+}
+

@@ -1,0 +1,71 @@
+// Variables
+
+$dark-purple: #906090;
+$light-purple: #c695c6;
+
+/* Estilos Seccion Principal Home */
+
+.bg-dark-purple {
+    background: url('../img/bg-dark-purple.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .primera-seccion {
+    display: flex;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    justify-content: space-between;
+  
+    .title {
+      padding: 50px 50px 50px 0;
+      color: white;
+  
+      h1 {
+        font-size: 55px;
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+  
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 35px;
+        line-height: 150%;
+      }
+    }
+  }
+  
+  .primera-seccion .img {
+    max-width: 560px;
+  }
+  
+
+  /* Estilos Formulario Subscribete */
+
+.caja-subscribete {
+  padding: 65px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    color: white;
+  }
+
+  p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  form input[type="text"] {
+    padding: 12px;
+    color: black;
+    width: 100%;
+  }
+}

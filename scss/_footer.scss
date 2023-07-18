@@ -1,0 +1,42 @@
+/* Estilos Pie de Pagina */
+
+footer {
+    background-color: #001848;
+    color: white;
+    padding: 65px 0;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  
+    .footer-logo img {
+      max-width: 180px;
+      opacity: 0.9;
+      transition: 0.2s opacity;
+  
+      &:hover {
+        opacity: 1;
+      }
+    }
+  
+    .footer-text ul {
+      margin-top: 15px;
+  
+      li {
+        margin-top: 15px;
+        list-style: none;
+  
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  
+  .copyright {
+    padding-top: 50px;
+    text-align: center;
+  }

@@ -1,0 +1,43 @@
+/* Estilos Pagina Nosotros */
+
+.bg-img-about {
+    background: url('../img/bg-about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bg-img-about-purple {
+    background: url('../img/bg-about-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .borde-about-person {
+    border: 3px solid #906090 !important;
+  }
+  
+  .box-person {
+    height: 335px;
+  }
+  
+  .info-person {
+    position: relative;
+    height: 280px;
+  }
+  
+  .text-person {
+    height: calc(100% - 50px);
+  
+    p {
+      height: fit-content;
+      max-height: 190px;
+      overflow: auto;
+    }
+  }
+  
+  .name-person {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+  }

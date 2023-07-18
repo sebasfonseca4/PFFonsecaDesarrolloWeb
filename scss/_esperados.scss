@@ -1,0 +1,38 @@
+/* Estilos juegos mas esperados */
+
+.bg-light-purple {
+    background: url('../img/bg-light-purple.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .mas-esperados {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  
+    h2 {
+      margin-bottom: 65px;
+      text-align: center;
+      font-size: 32px;
+      color: white;
+    }
+  }
+  
+  .mas-esperados-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    .caja {
+      width: 100%;
+      color: white;
+  
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        margin-top: 25px;
+      }
+    }
+  }
+  

@@ -1,0 +1,24 @@
+/* Estilos Pagina Noticias */
+
+.banner-noticias .titulo {
+    color: #D296D2;
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    -webkit-text-stroke: 2px #B01BC8;
+    padding-top: 20px;
+  }
+
+
+/* Estilos Mobile Media Queries */
+
+@media (max-width: 768px) {
+    /* Estilos Pagina Noticias Mobile  */
+  
+    .formulario {
+      width: 100%;
+    }
+  }
+  
