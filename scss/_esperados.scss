@@ -1,10 +1,15 @@
 /* Estilos juegos mas esperados */
 
+/* Mixin para estilos de fondo de imagen */
+@mixin bg-image($url) {
+  background: url('#{$url}');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .bg-light-purple {
-    background: url('../img/bg-light-purple.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  @include bg-image('../img/bg-light-purple.png');
+}
   
   .mas-esperados {
     padding-top: 65px;

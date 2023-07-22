@@ -1,16 +1,21 @@
 /* Estilos Pagina Reviews */
 
+/* Mixin para estilos de fondo de imagen */
+@mixin bg-image($url) {
+  background: url('#{$url}');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .bg-img-dark {
-    background: url('../img/bg-img-dark.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  @include bg-image('../img/bg-img-dark.png');
+}
   
-  .bg-dark-blue {
-    background-color: #001848;
-  }
-  
-  .bg-purple-light {
-    background-color: #906090;
-  }
-  
+.bg-dark-blue {
+  background-color: #001848;
+}
+
+.bg-purple-light {
+  background-color: #906090;
+}

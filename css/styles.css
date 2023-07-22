@@ -71,6 +71,7 @@ footer {
   text-align: center;
 }
 
+/* Mixin para estilos de fondo de imagen */
 /* Estilos Seccion Principal Home */
 .bg-dark-purple {
   background: url("../img/bg-dark-purple.png");
@@ -100,7 +101,6 @@ footer {
   margin-bottom: 35px;
   line-height: 150%;
 }
-
 .primera-seccion .img {
   max-width: 560px;
 }
@@ -130,6 +130,8 @@ footer {
 }
 
 /* Estilos Pagina Nosotros */
+/* Mixin para estilos de fondo de imagen */
+/* mixin para las clases existentes */
 .bg-img-about {
   background: url("../img/bg-about.png");
   background-repeat: no-repeat;
@@ -172,6 +174,7 @@ footer {
 }
 
 /* Estilos juegos mas esperados */
+/* Mixin para estilos de fondo de imagen */
 .bg-light-purple {
   background: url("../img/bg-light-purple.png");
   background-repeat: no-repeat;
@@ -225,6 +228,7 @@ footer {
   }
 }
 /* Estilos Pagina Reviews */
+/* Mixin para estilos de fondo de imagen */
 .bg-img-dark {
   background: url("../img/bg-img-dark.png");
   background-repeat: no-repeat;
@@ -246,7 +250,7 @@ footer {
 * {
   padding: 0;
   margin: 0;
-  font-family: "Inter" !important;
+  font-family: "Inter", sans-serif;
 }
 
 .contenedor {
@@ -262,6 +266,11 @@ footer {
 /* Estilos Pagina Contacto */
 .formulario {
   width: 50%;
+}
+@media (max-width: 768px) {
+  .formulario {
+    width: 100% !important;
+  }
 }
 
 /* Estilos Generales */
@@ -291,5 +300,7 @@ footer {
 .btn-purple-lg {
   font-size: 18px;
 }
+
+/* Mixin para estilos de fondo de imagen */
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,43 +1,49 @@
 /* Estilos Pagina Nosotros */
 
+/* Mixin para estilos de fondo de imagen */
+@mixin bg-image($url) {
+  background: url('#{$url}');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* mixin para las clases existentes */
 .bg-img-about {
-    background: url('../img/bg-about.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  @include bg-image('../img/bg-about.png');
+}
+
+.bg-img-about-purple {
+  @include bg-image('../img/bg-about-2.png');
+}
+
   
-  .bg-img-about-purple {
-    background: url('../img/bg-about-2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+.borde-about-person {
+  border: 3px solid #906090 !important;
+}
+
+.box-person {
+  height: 335px;
+}
+
+.info-person {
+  position: relative;
+  height: 280px;
+}
+
+.text-person {
+  height: calc(100% - 50px);
+
+  p {
+    height: fit-content;
+    max-height: 190px;
+    overflow: auto;
   }
-  
-  .borde-about-person {
-    border: 3px solid #906090 !important;
-  }
-  
-  .box-person {
-    height: 335px;
-  }
-  
-  .info-person {
-    position: relative;
-    height: 280px;
-  }
-  
-  .text-person {
-    height: calc(100% - 50px);
-  
-    p {
-      height: fit-content;
-      max-height: 190px;
-      overflow: auto;
-    }
-  }
-  
-  .name-person {
-    position: absolute;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-  }
+}
+
+.name-person {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+}

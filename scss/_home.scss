@@ -1,3 +1,10 @@
+/* Mixin para estilos de fondo de imagen */
+@mixin bg-image($url) {
+  background: url('#{$url}');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 // Variables
 
 $dark-purple: #906090;
@@ -6,10 +13,9 @@ $light-purple: #c695c6;
 /* Estilos Seccion Principal Home */
 
 .bg-dark-purple {
-    background: url('../img/bg-dark-purple.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  @include bg-image('../img/bg-dark-purple.png');
+}
+
   
   .primera-seccion {
     display: flex;
@@ -35,11 +41,12 @@ $light-purple: #c695c6;
         line-height: 150%;
       }
     }
+
+    .img{
+      max-width: 560px;
+    }
   }
   
-  .primera-seccion .img {
-    max-width: 560px;
-  }
   
 
   /* Estilos Formulario Subscribete */

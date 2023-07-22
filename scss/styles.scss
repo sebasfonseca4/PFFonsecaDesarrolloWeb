@@ -6,20 +6,22 @@
 @import "noticias";
 @import "reviews";
 
-// Variables
-
-$dark-purple: #906090;
-$light-purple: #c695c6;
-
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
 }
 
+// Variables
+$dark-purple: #906090;
+$light-purple: #c695c6;
+$text-family: 'Inter', sans-serif;
+
+
+
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Inter' !important;
+  font-family: $text-family;
 }
 
 .contenedor {
@@ -37,6 +39,9 @@ $light-purple: #c695c6;
 
 .formulario {
   width: 50%;
+  @media (max-width: 768px) {    
+    width: 100% !important;    
+  }
 }
 
 /* Estilos Generales */
@@ -71,3 +76,11 @@ $light-purple: #c695c6;
   font-size: 18px;
 }
 
+
+/* Mixin para estilos de fondo de imagen */
+
+@mixin bg-image($url) {
+  background: url('#{$url}');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
