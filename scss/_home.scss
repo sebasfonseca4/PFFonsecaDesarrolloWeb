@@ -45,8 +45,29 @@ $light-purple: #c695c6;
     .img{
       max-width: 560px;
     }
+    
   }
-  
+
+.box-img-new-game {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.text-truck-game{
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Número de líneas que se mostrarán */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}  
   
 
   /* Estilos Formulario Subscribete */

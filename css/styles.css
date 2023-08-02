@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Estilos Header */
 header {
   background-color: #483078;
@@ -103,6 +104,27 @@ footer {
 }
 .primera-seccion .img {
   max-width: 560px;
+}
+
+.box-img-new-game {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.box-img-new-game img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.text-truck-game {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Número de líneas que se mostrarán */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Estilos Formulario Subscribete */
@@ -220,6 +242,11 @@ footer {
   padding-top: 20px;
 }
 
+.box-img-card-news {
+  max-height: 200px;
+  object-fit: cover;
+}
+
 /* Estilos Mobile Media Queries */
 @media (max-width: 768px) {
   /* Estilos Pagina Noticias Mobile  */
@@ -241,6 +268,11 @@ footer {
 
 .bg-purple-light {
   background-color: #906090;
+}
+
+.box-img-card {
+  max-height: 150px;
+  object-fit: cover;
 }
 
 @font-face {
